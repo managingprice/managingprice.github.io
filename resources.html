@@ -1,0 +1,88 @@
+<! DOCTYPE html >
+
+<html>
+
+<head>
+	
+	<title> Managing Price </title>
+	
+	<meta charset = "utf-8" />
+	
+	<link rel = "shortcut icon" href = "redpricetag.ico" />
+	
+	<!-- remove defaults and improve browser compatibility -->
+	<link type = "text/css" rel = "stylesheet" href = "layout.css" />
+	
+	<!-- layout -->
+	<link type = "text/css" rel = "stylesheet" href = "layout.css" />
+	
+	<!-- expandable list -->
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$(".detail").hide();
+			$(".expandable").click(function(){
+				var itemClicked = $(this);
+				itemClicked.children(".symbol").fadeToggle("medium");
+				itemClicked.next(".detail").slideToggle("medium", function(){
+					itemClicked.toggleClass("collapsible");
+					itemClicked.children(".symbol").fadeToggle("fast");
+				});
+			});
+		});
+	</script>
+	
+</head>
+	
+<body>
+
+	<div id = "wrapper"> <!-- for layout purposes -->
+
+		<div id = "header">
+			<img src = "ManagingPriceHeader.png" alt = "Managing Price: Tools for Procurement Professionals" />
+		</div>
+		
+		<div id = "navigation">
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "buyTheBook.html">Buy the book</a></li>
+				<li><a href = "tableOfContents.html">Table of contents</a></li>
+				<li><a href = "resources.html" class = "here">Resources</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id = "resourceLinks">
+			<ul>
+				<li class = "expandable">Economic indicators<span class = "symbol"></span></li>
+				<ul class = "detail">
+					<li><a href = "http://www.bls.gov">United States Bureau of Labor Statistics</a></li>
+					<li><a href = "http://www.bls.gov/news.release/ppi.tn.htm">BLS Producer Price Index</a></li>
+					<li><a href = "http://www.bloomberg.com/quote/BDIY:IND">Baltic Dry Index</a></li>
+					<li><a href = "http://en.wikipedia.org/wiki/List_of_minimum_wages_by_country">Minimum wages per country</a></li>
+				</ul>
+				<li class = "expandable">Contract terms and conditions<span class = "symbol"></span></li>
+				<ul class = "detail">
+					<li><a href = "https://law.duke.edu/lib/researchguides/formbks">Duke Law Form Books</a></li>
+					<li><a href = "http://www.ncga.state.nc.us/gascripts/statutes/statutestoc.pl?Chapter=0025">North Carolina Uniform Commercial Code</a></li>
+					<li><a href = "http://uncitral.org/uncitral/en/uncitral_texts/sale_goods/1980CISG.html">UN Convention on Contracts for the International Sale of Goods</a></li>
+				</ul>
+				<li class = "expandable">Books<span class = "symbol"></span></li>
+				<ul class = "detail">
+					<li><a href = "http://www.amazon.com/dp/0814404863/?tag=manapric-20">The Power of Strategic Costing, by Dale Brethauer</a>*</li>
+					<li><a href = "http://www.amazon.com/dp/0684841487/?tag=manapric-20">Competitive Strategy, by Michael E. Porter</a>*</li>
+					<li><a href = "https://archive.org/details/nasa_techdoc_19760006882">Guidelines for Application of Learning/Cost Improvement Curves, by Leon M. Delionback</a></li>
+					<li><a href = "www.ceh.nasa.gov">NASA Cost Estimating Handbook</a></li>
+					<li><a href = "http://www.amazon.com/dp/0674840313/?tag=manapric-20">The Strategy of Conflict, by Thomas C.Schelling</a>*</li>
+					<li><a href = "http://www.rand.org/pubs/commercial_books/CB113-1.html">The Compleat Strategist, by John D. Williams</a></li>
+					<li><a href = "http://www.amazon.com/dp/159031977X/?tag=manapric-20">Hereof, Thereof, and Everywhereof, by Howard Darmstadter</a>*</li>
+					<li style = "max-width: 550px"><br /><br />* Managing Price is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</li>
+				</ul>
+			</ul>
+		</div>
+		
+	</div> <!-- end of wrapper -->
+	
+</body>
+
+</html>

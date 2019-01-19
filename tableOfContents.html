@@ -1,0 +1,228 @@
+<! DOCTYPE html >
+
+<html>
+
+<head>
+	
+	<title> Managing Price </title>
+	
+	<meta charset = "utf-8" />
+	
+	<link rel = "shortcut icon" href = "redpricetag.ico" />
+	
+	<!-- remove defaults and improve browser compatibility -->
+	<link type = "text/css" rel = "stylesheet" href = "layout.css" />
+	
+	<!-- layout -->
+	<link type = "text/css" rel = "stylesheet" href = "layout.css" />
+	
+	<!-- expandable list -->
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$(".detail").hide();
+			$(".expandable").click(function(){
+				var itemClicked = $(this);
+				itemClicked.children(".symbol").fadeToggle("medium");
+				itemClicked.next(".detail").slideToggle("medium", function(){
+					itemClicked.toggleClass("collapsible");
+					itemClicked.children(".symbol").fadeToggle("fast");
+				});
+			});
+		});
+	</script>
+	
+</head>
+	
+<body>
+
+	<div id = "wrapper"> <!-- for layout purposes -->
+
+		<div id = "header">
+			<img src = "ManagingPriceHeader.png" alt = "Managing Price: Tools for Procurement Professionals" />
+		</div>
+		
+		<div id = "navigation">
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "buyTheBook.html">Buy the book</a></li>
+				<li><a href = "tableOfContents.html" class = "here">Table of contents</a></li>
+				<li><a href = "resources.html">Resources</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id = "contents">
+			<ul>
+				<ol start = "0">
+					<li type = "none">Preface</li>
+					<li class = "expandable">Introduction<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Savings achievable</li>
+					</ul>
+					<li class = "expandable">Four phases of negotiation<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Target price</li>
+						<li>Leverage</li>
+					</ul>
+				</ol>
+				<li class = "expandable">Phase 1. Analysis<span class = "symbol"></span></li>
+				<ol start = "3" class = "detail">
+					<li class = "expandable">Pareto 80/20 rule<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Spend analysis</li>
+						<li>Political impasses</li>
+					</ul>
+					<li class = "expandable">Data collection<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Data normalization</li>
+					</ul>
+					<li>Economic indicators</li>
+					<li>Porter’s five forces</li>
+					<li>SWOT analysis</li>
+					<li class = "expandable">Product positioning maps<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Price versus technology</li>
+						<li>Quality versus support</li>
+					</ul>
+					<li>Substitution</li>
+					<li class = "expandable">Change in technology<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Expect progress</li>
+						<li>Disruptive technologies</li>
+					</ul>
+					<li class = "expandable">Cost breakdowns<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Fixed and variable costs</li>
+						<li>Nonrecurring and overhead costs</li>
+						<li>Material and labor costs</li>
+						<li>Other cost breakdowns</li>
+					</ul>
+					<li>Price discount schedule</li>
+					<li>Product bundling</li>
+					<li>Buying groups</li>
+					<li class = "expandable">Corporate financial ratios<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Liquidity (solvency or debt-paying ability)</li>
+						<li>Debt</li>
+						<li>Activity (or efficiency)</li>
+						<li>Profitability</li>
+					</ul>
+				</ol>
+				<li class = "expandable">Phase 2. Models<span class = "symbol"></span></li>
+				<ol start = "16" class = "detail">
+					<li>Per unit of measurement</li>
+					<li>Bottom-up cost analysis</li>
+					<li>Analogy</li>
+					<li>Exchange price</li>
+					<li>Increased production</li>
+					<li>Supplier cash flows</li>
+					<li>Low-cost country</li>
+					<li>Make or buy</li>
+					<li>Engineer cost function</li>
+					<li>Power-sizing model</li>
+					<li class = "expandable">Learning curve<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Learning rate</li>
+						<li>Variations</li>
+					</ul>
+					<li class = "expandable">Linear regression<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Simple linear regression</li>
+						<li>Multiple linear regression</li>
+						<li>Goodness of fit</li>
+					</ul>
+					<li class = "expandable">Aftermarket revenues<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Simulation</li>
+						<li>Warranty</li>
+						<li>Aftermarket cash flows</li>
+					</ul>
+				</ol>
+				<li class = "expandable">Phase 3. Negotiation<span class = "symbol"></span></li>
+				<ol start = "29" class = "detail">
+					<li>Supplier presentation</li>
+					<li>Stress</li>
+					<li>Timing</li>
+					<li class = "expandable">Emotions<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Goodwill</li>
+						<li>Anger</li>
+						<li>Fear</li>
+						<li>Regret</li>
+						<li>Pacification</li>
+					</ul>
+					<li class = "expandable">Fairness and trust<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Commitments</li>
+						<li>Transparency</li>
+					</ul>
+					<li>Game theory</li>
+					<li>Mixed motives</li>
+					<li>Alternative suppliers</li>
+					<li class = "expandable">Threats<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Threat of substitution</li>
+						<li>Threat of a new entrant</li>
+						<li>Fractional threats</li>
+					</ul>
+					<li>Market collusion</li>
+				</ol>
+				<li class = "expandable">Phase 4. Contract<span class = "symbol"></span></li>
+				<ol start = "39" class = "detail">
+					<li>Long-term agreements</li>
+					<li>Currency exchange rate</li>
+					<li>Incoterms</li>
+					<li class = "expandable">Contract terms and conditions<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Title page</li>
+						<li>Typical definitions</li>
+						<li>Scope of work</li>
+						<li>Purchase order process</li>
+						<li>Purchase contract management</li>
+						<li>Change management</li>
+						<li>Delivery and acceptance</li>
+						<li>Warranty</li>
+						<li>After sales service</li>
+						<li>Confidentiality</li>
+						<li>Duration</li>
+						<li>Termination</li>
+						<li>Disputes</li>
+						<li>General (miscellaneous)</li>
+					</ul>
+					<li>Escalation</li>
+				</ol>
+				<li><!-- separator between phase 4 and summary --></li>
+				<ol start = "44">
+					<li>Summary</li>
+					<li class = "expandable">Case studies<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Case 1: A negotiation story</li>
+						<li>Case 2: Aircraft windshields</li>
+						<li>Case 3: Personal computers</li>
+						<li>Case 4: Commercial truck tires</li>
+						<li>Case 5: Steel</li>
+					</ul>
+					<li type = "none" class = "expandable">Selected bibliography<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Analysis phase</li>
+						<li>Models phase</li>
+						<li>Negotiation phase</li>
+						<li>Contract phase</li>
+					</ul>
+					<li type = "none" class = "expandable">Appendix<span class = "symbol"></span></li>
+					<ul class = "detail">
+						<li>Exponents</li>
+						<li>Logarithms</li>
+						<li>Learning curve reference table</li>
+					</ul>
+					<li type = "none">Index</li>
+				</ol>
+			</ul>
+		</div>
+		
+	</div> <!-- end of wrapper -->
+	
+</body>
+
+</html>
