@@ -1,0 +1,31 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0Bzx_lzg2nONNRE15SC1MbWp3Yms",
+      "contentType": "text/html",
+      "name": "index.html",
+      "path": "0Bzx_lzg2nONNb1dwWnRHbWtJZ1E/"
+    },
+    {
+      "fileId": "0Bzx_lzg2nONNVjA0bnYzbWpFYzg",
+      "contentType": "text/html",
+      "name": "contact.html",
+      "path": "0Bzx_lzg2nONNb1dwWnRHbWtJZ1E/"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "0Bzx_lzg2nONNbXM1bTJCbzBLRXc",
+      "contentType": "text/css",
+      "name": "reset.css",
+      "path": "0Bzx_lzg2nONNb1dwWnRHbWtJZ1E/"
+    },
+    {
+      "fileId": "0Bzx_lzg2nONNSWkyZ1dHLUFsUUk",
+      "contentType": "text/css",
+      "name": "layout.css",
+      "path": "0Bzx_lzg2nONNb1dwWnRHbWtJZ1E/"
+    }
+  ],
+  "javascriptFiles": []
+}
